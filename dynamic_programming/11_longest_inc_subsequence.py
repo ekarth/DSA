@@ -19,3 +19,5 @@ def lengthOfLIS(sequence):
     return answer
 
 print(lengthOfLIS([2,1,3,4,9,7,8]))
+# time complexity: O(n^2)
+# space complexity: O(n)
