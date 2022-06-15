@@ -3,8 +3,11 @@
 # that what is the longest increasing subsequencs ending at that index.
 # if the number at that index is less than the number at index i, then we will add +1 to that number and take their max to enter at i.
 
+# Link: https://leetcode.com/problems/longest-increasing-subsequence/
 def lengthOfLIS(sequence):
-    
+    '''Input: sequence of numbers
+    Output: length of the longest increasing subsequence
+    longest increasing subsequence: Each number is followed by a larger number'''
     dp = [1] * len(sequence)
     for i in range(1, len(sequence)):
         for j in range(0, i):
