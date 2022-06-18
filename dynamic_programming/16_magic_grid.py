@@ -7,6 +7,8 @@
 # From a cell (i,j), you can only move either one cell down or right i.e., to cell (i+1,j) or cell (i,j+1) and 
 # you can not move outside the magic grid. You have to find the minimum number of strength points with which 
 # you will be able to reach the destination cell.
+
+# Subprobem: Min health to move from current position tto destination
 def min_health_finder(r, c, grid):
     # Creating table 
     dp = [[0 for i in range(c)] for j in range(r)]
