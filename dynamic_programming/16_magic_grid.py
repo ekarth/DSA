@@ -8,7 +8,11 @@
 # you can not move outside the magic grid. You have to find the minimum number of strength points with which 
 # you will be able to reach the destination cell.
 
-# Subprobem: Min health to move from current position tto destination
+# Problem Link: https://practice.geeksforgeeks.org/problems/minimum-points-to-reach-destination0540/
+
+# Subproblems: Min positive health to move from current position to destination
+# Space Complexity: O(MN)
+# Time Complexity: O(MN)
 def min_health_finder(r, c, grid):
     # Creating table 
     dp = [[0 for i in range(c)] for j in range(r)]
