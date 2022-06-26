@@ -1,2 +1,0 @@
-def maxSubArray(nums) -> int:
-    
