@@ -43,3 +43,19 @@ print(change(10, [10]))
 # Furthur optimization:
 # Use O(n) Space
 # Use O(nm) Time
+
+# GFG Link: https://practice.geeksforgeeks.org/problems/coin-change2448/1
+# Bottom-up Approach 
+# O(n) space 
+def count(self, S, m, n): 
+    # code here 
+    amount = n
+    num_coins = m
+    dp = [0]*(amount+1)
+    dp[0] = 1
+    for i in range(num_coins): # (O(m))
+        for sum in range(S[i], amount+1): # O(n)
+            if sum - S[i] >= 0:
+                dp[sum] += dp[sum-S[i]]
+    
+    return dp[-1]
