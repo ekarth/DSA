@@ -15,7 +15,7 @@ int main() {
 	    
 	    int arr[n];
 	    
-	    vector<> dp(n, 1);
+	    vector<int> dp(n, 1);
 	    long long num_subarrays = 0;
 	    
 	    for(int i = 0; i < n; ++i) 
